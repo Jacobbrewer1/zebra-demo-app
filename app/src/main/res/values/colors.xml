@@ -7,4 +7,33 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/grey</color>
+    <color name="colorPrimaryDark">@color/green_dark</color><!--2A5F51-->
+    <color name="colorAccent">@color/purple</color>
+    <color name="colorAccentDark">@color/grey</color>
+
+    <color name="topbar">@color/green</color>
+    <color name="navbar">@color/grey</color>
+
+    <color name="colourWhite">#FFFFFF</color>
+    <color name="colourBlack">#000000</color>
+    <color name="colourBrightRed">#d9534f</color>
+    <color name="colourBrightGreen">#5cb85c</color>
+
+    <color name="loginEditTextTextColour">#FFFFFF</color>
+    <color name="loginSignInButtonBackground">@color/grey</color>
+
+    <color name="green">#309D76</color>
+    <color name="green_dark">#247659</color>
+    <color name="grey">#272834</color>
+    <color name="purple">#5027D2</color>
+
+    <color name="dialog_text">#0F0F0F</color>
+    <color name="selected_blue">#03A9F4</color>
+
+    <color name="menu_notAvailable">#CC0000</color>
+    <color name="menu_notAvailable_transparent">#11CC0000</color>
+    <color name="menu_available">#006944</color>
+    <color name="menu_available_transparent">#11006944</color>
 </resources>
