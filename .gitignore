@@ -25,6 +25,9 @@ replay_pid*
 
 # IntelliJ IDEA
 .idea/
+
 *.iml
 .gradle
 local.properties
+
+app/build/
