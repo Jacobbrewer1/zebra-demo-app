@@ -50,7 +50,7 @@
                 <TextView android:id="@+id/tempText"
                           style="@style/menu_imageButtonText"
                           android:layout_below="@id/tempButton"
-                          android:text="@string/icon_start_scan_text"/>
+                          android:text="@string/general_unimplemented"/>
             </RelativeLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ViewFlipper>
