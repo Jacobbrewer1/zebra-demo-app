@@ -6,6 +6,22 @@
     <include android:id="@+id/toolbar"
              layout="@layout/toolbar_main"/>
 
+    <LinearLayout android:id="@+id/barcode_scanned_layout"
+                  android:layout_width="wrap_content"
+                  android:layout_height="25dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_centerVertical="true"
+                  android:orientation="horizontal"
+                  android:layout_above="@+id/barcode_display_layout">
+
+        <TextView android:id="@+id/barcode_scanned"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:textColor="@color/white"
+                  android:text="@string/scan_barcode_text"/>
+
+    </LinearLayout>
+
     <LinearLayout android:id="@+id/barcode_display_layout"
                   android:layout_width="wrap_content"
                   android:layout_height="25dp"
