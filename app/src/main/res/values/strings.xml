@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">zebra-demo-app</string>
+
+    <!-- General -->
+    <string name="general_ok">OK</string>
+    <string name="general_yes">Yes</string>
+    <string name="general_no">No</string>
+    <string name="general_unknown_activity">Unknown activity</string>
+    <string name="general_cancel">Cancel</string>
+    <string name="general_save">Save</string>
+    <string name="general_sucess">Success</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_store_label">Store:</string>
+    <string name="toolbar_user_label">User:</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_logo_description">Logo</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_loggingIn_text">Logging in</string>
+    <string name="login_error_title">Error</string>
+    <string name="login_error_text">Invalid username or password</string>
+    <string name="login_errorDevices_title">Error</string>
+    <string name="login_errorDevices_text">Device limit reached</string>
+    <string name="login_version">Version %s</string>
+
+    <!-- Home -->
+    <string name="home_title">Home</string>
+    <string name="home_welcome">Welcome</string>
+    <string name="home_welcome_message">Welcome to the Zebra Demo App</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="dashboard_welcome">Welcome</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_welcome">Welcome</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Notifications</string>
+    <string name="notifications_welcome">Welcome</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_title">Dialog</string>
+    <string name="dialog_message">This is a dialog</string>
+    <string name="dialog_positive_button">OK</string>
+    <string name="dialog_negative_button">Cancel</string>
+
+    <!-- Bottom Navigation -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_settings">Settings</string>
+
+    <!-- Icons -->
+    <string name="icon_start_scan_text">Start Scan</string>
+</resources>

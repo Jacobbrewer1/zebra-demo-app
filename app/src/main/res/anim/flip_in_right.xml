@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <scale android:duration="250"
+           android:startOffset="250"
+           android:fromXScale="0%"
+           android:toXScale="100%"
+           android:fromYScale="90%"
+           android:toYScale="100%">
+    </scale>
+
+    <translate android:duration="250"
+               android:startOffset="250"
+               android:fromXDelta="150"
+               android:toXDelta="0"
+               android:fromYDelta="20"
+               android:toYDelta="0">
+    </translate>
+</set>
