@@ -16,17 +16,6 @@ updates:
       prefix: "chore"
       include: "scope"
 
-  - package-ecosystem: "gradle"
-    directory: "app/" # Location of the app build.gradle file
-    schedule:
-      interval: "weekly"
-      day: "monday"
-    reviewers:
-      - "Jacobbrewer1"
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
