@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:a="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   a:id="@+id/login_mainLayout"
+                                                   a:layout_width="match_parent"
+                                                   a:layout_height="match_parent"
+                                                   a:background="@color/colorPrimary">
+
+    <ImageView a:layout_width="match_parent"
+               a:layout_height="0dp"
+               a:id="@+id/login_logo"
+               a:layout_marginStart="20sp"
+               a:layout_marginTop="40dp"
+               a:layout_marginEnd="20dp"
+               a:layout_marginBottom="20dp"
+               app:layout_constraintBottom_toTopOf="@+id/login_contentLayout"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:srcCompat="@drawable/logo"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            a:id="@+id/login_contentLayout"
+            a:layout_width="0dp"
+            a:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6">
+
+        <EditText a:id="@+id/login_username"
+                  style="@style/LoginEditText"
+                  a:layout_width="225sp"
+                  a:layout_height="45sp"
+                  a:layout_marginTop="25dp"
+                  a:background="@drawable/login_username_background"
+                  a:hint="@string/login_username_hint"
+                  a:imeOptions="actionNext"
+                  a:inputType="text"
+                  a:maxLength="40"
+                  a:singleLine="true"
+                  a:textSize="20sp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText a:id="@+id/login_password"
+                  style="@style/LoginEditText"
+                  a:layout_width="225sp"
+                  a:layout_height="45sp"
+                  a:layout_marginTop="25dp"
+                  a:background="@drawable/login_password_background"
+                  a:hint="@string/login_password_hint"
+                  a:imeOptions="actionDone"
+                  a:inputType="textPassword"
+                  a:maxLength="40"
+                  a:singleLine="true"
+                  a:textSize="20sp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toBottomOf="@id/login_username"/>
+
+        <Button a:id="@+id/login_loginButton"
+                a:layout_width="125sp"
+                a:layout_height="45sp"
+                a:layout_marginTop="25dp"
+                a:background="@drawable/login_sign_in_button"
+                a:textColor="@color/loginEditTextTextColour"
+                a:text="@string/login_button"
+                a:textAllCaps="false"
+                a:textSize="18sp"
+                a:onClick="loginButtonPressed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/login_password"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView a:id="@+id/login_version"
+              a:layout_width="wrap_content"
+              a:layout_height="wrap_content"
+              a:layout_marginBottom="18sp"
+              a:layout_marginEnd="20sp"
+              a:textColor="@color/colourWhite"
+              a:textSize="18sp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

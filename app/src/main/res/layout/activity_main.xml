@@ -1,35 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="?attr/actionBarSize">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_view"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
-            android:layout_marginEnd="0dp"
-            android:background="?android:attr/windowBackground"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:menu="@menu/bottom_nav_menu"/>
+    <include android:id="@+id/toolbar"
+             layout="@layout/toolbar_main"/>
 
-    <fragment
-            android:id="@+id/nav_host_fragment_activity_main"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:defaultNavHost="true"
-            app:layout_constraintBottom_toTopOf="@id/nav_view"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navGraph="@navigation/mobile_navigation"
-    />
+    <ViewFlipper android:id="@+id/page_flipper"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@id/page_selector"
+                 android:layout_below="@id/toolbar">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="match_parent"
+                                                           android:paddingBottom="10dp">
+
+            <RelativeLayout android:id="@+id/start_scan_layout"
+                            style="@style/menu_layout"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toTopOf="@id/start_scan_layout"
+                            app:layout_constraintEnd_toStartOf="@id/temp1">
+
+                <ImageButton android:id="@+id/menu_scan_button"
+                             style="@style/menu_imageButtonTopRow"
+                             android:contentDescription="@string/icon_start_scan_text"
+                             android:src="@drawable/icon_scan_button"
+                             android:onClick="navigate"/>
+
+                <TextView android:id="@+id/menu_scan_start_text"
+                          style="@style/menu_imageButtonText"
+                          android:layout_below="@id/menu_scan_button"
+                          android:text="@string/icon_start_scan_text"/>
+            </RelativeLayout>
+
+            <RelativeLayout android:id="@+id/temp1"
+                            style="@style/menu_layout"
+                            android:layout_height="match_parent"
+                            app:layout_constraintBottom_toTopOf="@id/temp1"
+                            app:layout_constraintEnd_toStartOf="@id/temp1">
+
+                <ImageButton android:id="@+id/tempButton"
+                             style="@style/menu_imageButtonTopRow"
+                             android:contentDescription="@string/icon_start_scan_text"
+                             android:src="@drawable/icon_orders_button"
+                             android:onClick="navigate"/>
+
+                <TextView android:id="@+id/tempText"
+                          style="@style/menu_imageButtonText"
+                          android:layout_below="@id/tempButton"
+                          android:text="@string/icon_start_scan_text"/>
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ViewFlipper>
+
+    <LinearLayout android:id="@+id/page_selector"
+                  android:layout_width="wrap_content"
+                  android:layout_height="25dp"
+                  android:layout_above="@id/navigation_view"
+                  android:layout_centerHorizontal="true"
+                  android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/page_selector_button1"
+                style="@style/page_selector_button"
+                android:enabled="true"
+                android:onClick="pageSelectorClicked"/>
+    </LinearLayout>
+
+    <include android:id="@+id/navigation_view"
+             layout="@layout/bottom_navigation"/>
+</RelativeLayout>

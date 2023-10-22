@@ -10,7 +10,7 @@ import android.widget.Toast
 import android.widget.ViewFlipper
 
 class MainActivity : BaseActivity() {
-    private val TAG: String = "MainActivity"
+    private val tag: String = "MainActivity"
 
     private var pageFlipper: ViewFlipper? = null
     private var currentIndex = 0
@@ -66,10 +66,10 @@ class MainActivity : BaseActivity() {
         var intent: Intent? = null
 
         when (view.id) {
-            R.id.menu_order_button -> {
-                Log.i(TAG, "navigate: Order button pressed, navigating")
+            R.id.menu_scan_button -> {
+                Log.i(tag, "navigate: Order button pressed, navigating")
 
-                intent = Intent(this, OrderActivity::class.java)
+                intent = Intent(this, ScanActivity::class.java)
             }
 
             else -> {

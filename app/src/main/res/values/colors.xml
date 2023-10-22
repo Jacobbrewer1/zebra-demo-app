@@ -36,4 +36,6 @@
     <color name="menu_notAvailable_transparent">#11CC0000</color>
     <color name="menu_available">#006944</color>
     <color name="menu_available_transparent">#11006944</color>
+
+    <color name="icon_background">@color/green_dark</color>
 </resources>

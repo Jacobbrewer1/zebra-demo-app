@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Zebrademoapp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Zebrademoapp" parent="Theme.AppCompat.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -12,5 +12,122 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colourWhite</item>
+    </style>
+
+    <style name="appbar_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colourWhite</item>
+    </style>
+
+    <style name="appbar_subTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colourWhite</item>
+    </style>
+
+    <style name="LoginEditText">
+        <item name="android:layout_width">250sp</item>
+        <item name="android:layout_height">50sp</item>
+        <item name="android:paddingStart">58sp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/loginEditTextTextColour</item>
+        <item name="android:textColorHint">@color/loginEditTextTextColour</item>
+        <item name="android:textCursorDrawable">@drawable/login_cursor</item>
+    </style>
+
+    <style name="activity_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="activity_subTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="page_selector_button">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:background">@drawable/page_selector_button</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+
+    <style name="page_selector_title_text_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">@dimen/page_selector_title_text_padding_start</item>
+        <item name="android:paddingTop">@dimen/page_selector_title_text_padding_top</item>
+        <item name="android:paddingEnd">@dimen/page_selector_title_text_padding_start</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/colourWhite</item>
+        <item name="android:textSize">@dimen/page_selector_title_text_size</item>
+    </style>
+
+    <style name="menu_layout">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <!--        <item name="layout_constrainedWidth">true</item>-->
+        <!--        <item name="layout_constrainedHeight">true</item>-->
+        <item name="layout_constraintWidth_percent">0.5</item>
+        <item name="layout_constraintHeight_percent">0.23</item>
+    </style>
+
+    <style name="menu_imageButton">
+        <item name="android:layout_width">@dimen/menu_menuButton_width</item>
+        <item name="android:layout_height">@dimen/menu_menuButton_height</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="menu_imageButtonTopRow" parent="menu_imageButton">
+        <item name="android:layout_marginTop">@dimen/menu_menuButtonTopRow_marginTop</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">100dp</item>
+    </style>
+
+    <style name="menu_imageButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="menu_row">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="form_field_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:layout_marginStart">@dimen/form_value_marginStart</item>
+        <item name="android:layout_marginTop">@dimen/form_value_marginTop</item>
     </style>
 </resources>
