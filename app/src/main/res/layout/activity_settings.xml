@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include android:id="@+id/toolbar"
+             layout="@layout/toolbar_main"/>
+
+    <TextView android:id="@+id/page_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/settings_title"
+              android:layout_below="@+id/toolbar"
+              android:layout_centerHorizontal="true"
+              android:paddingTop="10sp"/>
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:layout_below="@+id/page_title"
+                                           android:layout_above="@+id/navigation_view"
+                                           android:layout_gravity="center_horizontal"
+                                           android:paddingTop="20sp"
+                                           android:paddingBottom="5sp">
+
+        <RelativeLayout android:id="@+id/container_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="2dp"
+                        android:orientation="horizontal"
+                        android:paddingEnd="50dp"
+                        android:paddingStart="50sp">
+
+            <LinearLayout android:id="@+id/logout_layout"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="horizontal">
+
+                <Button android:id="@+id/logout_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button"
+                        android:onClick="logoutButtonPressed"
+                        android:text="@string/settings_logout"
+                        android:textColor="@color/colourWhite"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include android:id="@+id/navigation_view"
+             layout="@layout/bottom_navigation"/>
+</RelativeLayout>

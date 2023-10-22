@@ -41,6 +41,8 @@
     <!-- Settings -->
     <string name="settings_title">Settings</string>
     <string name="settings_welcome">Welcome</string>
+    <string name="settings_logout">Logout</string>
+    <string name="settings_logout_message">Are you sure you want to log out?</string>
 
     <!-- Notifications -->
     <string name="notifications_title">Notifications</string>
