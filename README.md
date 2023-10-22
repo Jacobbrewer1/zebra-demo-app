@@ -41,18 +41,6 @@ The app can be built using Android Studio, IntelliJ IDEA or the Gradle command l
   device does not have the `EMDK` app installed. The `EMDK` app is required for barcode scanning. The app can be
   downloaded from
   the [Zebra support site](https://www.zebra.com/us/en/support-downloads/software/developer-tools/emdk-for-android.html).
-* If the app crashes with an error message indicating that the `EMDK` service is not available, it is possible that
-  the `EMDK` app is installed but has not been enabled. The `EMDK` app must be enabled before it can be used. To enable
-  the `EMDK` app, go to `Settings -> Apps -> EMDK Service -> Enable`.
-* If the app crashes with an error message indicating that the `EMDK` service is not available, it is possible that
-  the `EMDK` app is installed but has not been enabled. The `EMDK` app must be enabled before it can be used. To enable
-  the `EMDK` app, go to `Settings -> Apps -> EMDK Service -> Enable`.
-* If the app crashes with an error message indicating that the `EMDK` service is not available, it is possible that
-  the `EMDK` app is installed but has not been enabled. The `EMDK` app must be enabled before it can be used. To enable
-  the `EMDK` app, go to `Settings -> Apps -> EMDK Service -> Enable`.
-* If the app crashes with an error message indicating that the `EMDK` service is not available, it is possible that
-  the `EMDK` app is installed but has not been enabled. The `EMDK` app must be enabled before it can be used. To enable
-  the `EMDK` app, go to `Settings -> Apps -> EMDK Service -> Enable`.
 
 ## Debugging the app
 
