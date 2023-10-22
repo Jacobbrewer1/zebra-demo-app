@@ -71,4 +71,31 @@
 
     <!-- Icons -->
     <string name="icon_start_scan_text">Start Scan</string>
+
+    <!-- Scan -->
+    <string name="scan_title">Scan</string>
+    <string name="scan_start">Start</string>
+    <string name="scan_stop">Stop</string>
+    <string name="scan_scanning">Scanning</string>
+    <string name="scan_scanning_text">Scanning…</string>
+    <string name="scan_scanning_error">Scanning error</string>
+    <string name="scan_scanning_error_text">Error scanning</string>
+    <string name="scan_scanning_error_no_internet">No internet connection</string>
+    <string name="scan_scanning_error_no_internet_text">Please check your internet connection</string>
+    <string name="scan_scanning_error_no_internet_button">Retry</string>
+    <string name="scan_scanning_error_no_camera">No camera</string>
+    <string name="scan_scanning_error_no_camera_text">No camera found</string>
+    <string name="scan_scanning_error_no_camera_button">Retry</string>
+    <string name="scan_scanning_error_no_permission">No permission</string>
+
+    <!-- Scan Result -->
+    <string name="scan_result_title">Scan Result</string>
+    <string name="scan_result_text">Scan result</string>
+    <string name="scan_result_error">Scan result error</string>
+    <string name="scan_result_error_text">Error scanning</string>
+    <string name="scan_result_error_no_internet">No internet connection</string>
+    <string name="scan_result_error_no_internet_text">Please check your internet connection</string>
+    <string name="scan_result_error_no_internet_button">Retry</string>
+    <string name="scan_barcode_text">Barcode scanned</string>
+    <string name="scan_waiting_for_scan">Waiting for scan…</string>
 </resources>
