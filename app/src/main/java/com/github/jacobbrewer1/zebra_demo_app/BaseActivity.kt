@@ -126,9 +126,9 @@ abstract class BaseActivity : AppCompatActivity(), NavigationBarView.OnItemSelec
             R.id.navigation_settings -> {
                 Log.i(tag, "onNavigationItemSelected: Settings nav icon pressed")
 
-//                if (this !is SettingsActivity) {
-//                    intent = Intent(this, SettingsActivity::class.java)
-//                }
+                if (this !is SettingsActivity) {
+                    intent = Intent(this, SettingsActivity::class.java)
+                }
             }
         }
 
