@@ -17,6 +17,8 @@ class ScanActivity : BaseActivity(), IScanner {
 
         barcodeDisplay = findViewById(R.id.barcode_display)
 
+        barcodeDisplay?.text = getString(R.string.scan_waiting_for_scan)
+
         toolbar = findViewById(R.id.toolbar)
         bottomNavView = findViewById(R.id.navigation_view)
         setToolbarTextAndNavListener()

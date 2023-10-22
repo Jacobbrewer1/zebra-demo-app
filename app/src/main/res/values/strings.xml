@@ -97,4 +97,5 @@
     <string name="scan_result_error_no_internet_text">Please check your internet connection</string>
     <string name="scan_result_error_no_internet_button">Retry</string>
     <string name="scan_barcode_text">Barcode scanned</string>
+    <string name="scan_waiting_for_scan">Waiting for scan…</string>
 </resources>
