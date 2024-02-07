@@ -53,5 +53,5 @@ dependencies {
         include("*.jar")
     })
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("joda-time:joda-time:2.12.6")
+    implementation("joda-time:joda-time:2.12.7")
 }
